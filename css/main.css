@@ -1,0 +1,20 @@
+/* css/main.css */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+    --brand-purple: #4a3096;
+    --brand-white: #ffffff;
+    
+    --main-font: 'Space Grotesk', sans-serif;
+    
+    --pill-radius: 100px;
+    --pill-padding: 10px 30px;
+    --transition: 0.3s ease;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
