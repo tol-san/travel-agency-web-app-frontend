@@ -2,19 +2,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 :root {
-    --brand-purple: #4a3096;
-    --brand-white: #ffffff;
-    
-    --main-font: 'Space Grotesk', sans-serif;
-    
-    --pill-radius: 100px;
-    --pill-padding: 10px 30px;
-    --transition: 0.3s ease;
+  --brand-purple: #4a3096;
+  --brand-white: #ffffff;
+  --brand-yellow: #ffc72c;
+
+  --main-font: "Space Grotesk", sans-serif;
+
+  --pill-radius: 100px;
+  --pill-padding: 10px 36px;
+  --link-padding: 5px 10px;
+  --transition: 0.3s ease;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-    font-family: var(--main-font);
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
 }
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header__inner {
+  background-color: var(--brand-purple);
+  border-radius: var(--pill-radius);
+  padding: var(--pill-padding);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header__logo--link {
+  text-decoration: none;
+  font-weight: inherit;
+
+  background: linear-gradient(
+    90deg,
+    var(--brand-yellow) 50%,
+    var(--brand-white) 50%
+  );
+
+  background-size: 200% 100%;
+  background-position: 100% 0;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  transition: background-position 0.4s ease;
+}
+
+.header__logo--link:hover {
+  background-position: 0 0;
+}
+
+.header__link {
+  color: var(--brand-white);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: var(--link-padding);
+  transition: var(--transition);
+}
+
+.header__link:hover {
+  color: var(--brand-yellow);
+}
+.header__search {
+  background-color: var(--brand-white);
+  border-radius: 25px;
+  padding: 4px 6px 4px 15px;
+  margin-right: 20px;
+}
+
+.header__search--input {
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  width: 160px;
+}
+.header__search--btn {
+  background-color: var(--brand-purple);
+  color: var(--brand-white);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.header__icon {
+    color: var(--brand-white);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+.header__search--btn:hover, .header__icon:hover {color: var(--brand-yellow);}

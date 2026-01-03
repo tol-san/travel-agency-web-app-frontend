@@ -6,8 +6,44 @@
     <title>Travel With Me</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   </head>
   <body>
-    <div class="bg-success link-underline display-1 ">bootstrap testing</div>
+    <!-- HEADER -->
+    <header class="header container-fluid">
+      <div class="header__inner d-flex align-items-center  justify-content-between container">
+        <!-- LEFT -->
+        <div class="header__logo">
+          <!-- LOGO  -->
+          <a href="" class="header__logo--link">B&G Adventures</a>
+        </div>
+
+        <!-- CENTER -->
+        <nav class="header__nav d-none d-lg-block">
+          <ul class="header__list d-flex list-unstyled mb-0">
+            <li class="header__item">
+              <a href="" class="header__link">Destinations</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Travel Styles</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Deals</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- RIGHT -->
+        <div class="header__actions d-flex align-items-center ">
+          <div class="header__search">
+            <input type="text" class="header__search--input" placeholder="Search">
+            <button class="header__search--btn"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+          </div>
+          <i class="fa-solid fa-phone  header__icon"></i>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
   </body>
 </html>
